@@ -20,7 +20,7 @@
 @end
 
 @interface GlobalRaceModel : JSONModel
-@property (nonatomic, strong) NSString *id;
+@property (nonatomic, strong) NSString *rid;
 @property (nonatomic, strong) NSString *url;
 @property (nonatomic, strong) NSString *title;
 @property (nonatomic, strong) NSString *imageId;

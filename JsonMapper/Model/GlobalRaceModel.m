@@ -13,5 +13,8 @@
 @end
 
 @implementation GlobalRaceModel
-
++(JSONKeyMapper*)keyMapper
+{
+    return [[JSONKeyMapper alloc]initWithModelToJSONDictionary:@{@"rid":@"id"}];
+}
 @end
