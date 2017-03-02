@@ -14,7 +14,9 @@ Swift的相对较少，目前只用过`ObjectMapper`
 <br>
 2.  找出model对应的属性列表
 `-(void)__inspectProperties`
+
 1) 通过**runtime**的`class_copyPropertyList`方法获取model除`JSONModel`父类的所有的property列表
+
 2)通过`property_getName`获取到属性名和`property_getAttributes`获取到的**`encode string`**，来分析出每个属性各的类型，名称等，并保存到JSONModel的`JSONModelClassProperty`对象里。
 
 	**encode string**如下，T代表类型，@表示Cocoa对象类型，没有@则为基本类型，q表示long long，后面的表示Propert的属性，&为retain,N为nonatomic,之后的为变量名。参考[Declared Properties](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/ObjCRuntimeGuide/Articles/ocrtPropertyIntrospection.html),[Type Encodings](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/ObjCRuntimeGuide/Articles/ocrtTypeEncodings.html)
@@ -28,11 +30,11 @@ timestamp Tq,N,V_timestamp
 4. 各种情况的判断及赋值
 `-(BOOL)__importDictionary:(NSDictionary*)dict withKeyMapper:(JSONKeyMapper*)keyMapper validation:(BOOL)validation error:(NSError**)err`
 主要进行的判断:
-- value是否为空
-- 是否为标准JSON数据
-- 是否自定义setter方法，基本类型kvc赋值
-- JSONMode子类递归解析
-- 获取值类型和属性类型不一致时的转换
+	- value是否为空
+	- 是否为标准JSON数据
+	- 是否自定义setter方法，基本类型kvc赋值
+	- JSONMode子类递归解析
+	- 获取值类型和属性类型不一致时的转换
 
 总结运用的主要知识点:**Runtime,NSet,KVC**
 参看链接:
