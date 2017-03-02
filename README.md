@@ -36,7 +36,7 @@ Swift的相对较少，目前只用过`ObjectMapper`
 总结运用的主要知识点:**Runtime,NSet,KVC**<br>
 参看链接:<br>
 [JSONModel源码解析](https://satanwoo.github.io/2015/09/17/code-of-JSONModel/)<br>
-[JSONMOdel源代码解析](http://www.jianshu.com/p/64ce3927eb62)
+[JSONModel源代码解析](http://www.jianshu.com/p/64ce3927eb62)
 
 ####ObjectMapper
 由于Swift是强类型语言，本身不具备动态性，所以不能再通过**Runtime**来进行model映射，可在Demo中查看，获取的property列表为空。<br>
