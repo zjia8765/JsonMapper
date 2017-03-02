@@ -17,8 +17,8 @@ Swift的相对较少，目前只用过`ObjectMapper`
 2)通过`property_getName`获取到属性名和`property_getAttributes`获取到的**`encode string`**，来分析出每个属性各的类型，名称等，并保存到JSONModel的`JSONModelClassProperty`对象里。
 
 	**encode string**如下，T代表类型，@表示Cocoa对象类型，没有@则为基本类型，q表示long long，后面的表示Propert的属性，&为retain,N为nonatomic,之后的为变量名。参考[Declared Properties](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/ObjCRuntimeGuide/Articles/ocrtPropertyIntrospection.html),[Type Encodings](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/ObjCRuntimeGuide/Articles/ocrtTypeEncodings.html)
-> imageId T@"NSString",&,N,V_imageId
-timestamp Tq,N,V_timestamp
+> imageId T@"NSString",&,N,V_imageId<br>
+> timestamp Tq,N,V_timestamp
 <br>
 3. 通过**NSSet**判断需解析的dictionary里所有key是否包含刚解析出model的所有属性名，即为保证model中的property都能被赋值
 `-(BOOL)__doesDictionary:(NSDictionary*)dict matchModelWithKeyMapper:(JSONKeyMapper*)keyMapper error:(NSError**)err`
@@ -72,8 +72,8 @@ extension String {
 }
 ```
 
-> var string:String = "0987654321"
-> string[2]   //"8"
+> var string:String = "0987654321"<br>
+> string[2]   //"8"<br>
 > string[3] = "A" //"098A654321"
 
 - **自定义运算符**<br>
@@ -116,9 +116,9 @@ if let cat = animal as? Cat{
 
 1. Mapper初始化函数
 初始化函数很多， 可支持多种格式数据的解析，本文主要分析传入`[String: Any]`格式数据
-> public func map(JSONObject: Any?) -> N?
-> public func map(JSON: [String: Any]) -> N?
-> public func mapArray(JSONString: String) -> [N]? 
+> public func map(JSONObject: Any?) -> N?<br>
+> public func map(JSON: [String: Any]) -> N?<br>
+> public func mapArray(JSONString: String) -> [N]? <br>
 > ....
 
 2. model的`func mapping(map: Map)`函数
