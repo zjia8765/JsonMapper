@@ -1,10 +1,5 @@
-<<<<<<< Updated upstream
-###JSONModel和ObjectMapper代码解析
-=======
-# JsonMapper
-
 ###JSONModel和ObjectMapper代码解析###
->>>>>>> Stashed changes
+
 ---
 
 开发中我们经常用到一些将JSON转化为model对象的第三方库，
