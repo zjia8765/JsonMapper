@@ -8,7 +8,7 @@
 
 #import <JSONModel/JSONModel.h>
 
-
+@protocol RaceSourceModel;
 @interface RaceSourceModel : JSONModel
 @property (nonatomic, strong) NSString *id;
 @property (nonatomic, strong) NSString *name;
@@ -29,4 +29,5 @@
 @property (nonatomic, strong) NSString<Optional> *score;
 @property (nonatomic, strong) NSNumber<Ignore> *tag;
 @property (nonatomic, strong) RaceSourceModel *source;
+@property (nonatomic, strong) NSArray<RaceSourceModel> *sourceArr;
 @end
