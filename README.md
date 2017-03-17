@@ -38,7 +38,7 @@ timestamp Tq,N,V_timestamp
 
 [JSONMOdel源代码解析](http://www.jianshu.com/p/64ce3927eb62)
 
-####ObjectMapper
+####ObjectMapper<br>
 由于Swift是强类型语言，本身不具备动态性，所以不能再通过**Runtime**来进行model映射，可在Demo中查看，获取的property列表为空。
 **`注:`**Swift可通过`dynamic`关键字使属性，方法获得动态性，但Swift特有类型(如Character、Tuple)，该属性，方法无法添加dynamic修饰，会报错。可查看[swift Runtime](https://mp.weixin.qq.com/s?__biz=MzA3ODg4MDk0Ng==&mid=403153173&idx=1&sn=c631f95b28a0eb4b842a9494e43a30e5&scene=0&key=d36a7cd042cf3c6c4d1b4a323ca9625bfca90e32df2151720ddc61f027affe50eea04afd592e3446135b2628e0a12cf5af214bc8d38d76ff503e3406b2cd779c392d4bea7240174bc9cdafd625bd7bcd&ascene=0&uin=MTkzNzYxNjk1&devicetype=iMac+MacBookPro11%2C1+OSX+OSX+10.12.1+build(16B2555)&version=12010310&nettype=WIFI&fontScale=100&pass_ticket=ji1tPwp6tA%2FU%2BKdmZUBrp1wn%2B0PTnORZfvKuogesPjc%3D)
 
