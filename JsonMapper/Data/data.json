@@ -15,6 +15,24 @@
             "count": 1000,
             "filter": 0,
             "star": false
-        }
+        },
+       "sourceArr":[{
+                    "id": "171",
+                    "name": "新浪1",
+                    "desc": "sina.com.cn",
+                    "imageId": "i120410144218770994482216",
+                    "count": 1000,
+                    "filter": 0,
+                    "star": false
+                    },{
+                    "id": "172",
+                    "name": "新浪2",
+                    "desc": "sina.com.cn",
+                    "imageId": "i120410144218770994482216",
+                    "count": 1000,
+                    "filter": 0,
+                    "star": false
+                    }
+       ]
     }
 }

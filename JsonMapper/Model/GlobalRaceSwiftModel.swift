@@ -44,7 +44,7 @@ class GlobalRaceSwiftModel : Mappable {
     var like:Int = 0
     var score:String?
     var source:RaceSourceSwiftModel!
-    
+    var sourceArr:[RaceSourceSwiftModel]?
     
     required init?(map: Map){
         
@@ -60,5 +60,6 @@ class GlobalRaceSwiftModel : Mappable {
         like        <- map["like"]
         score       <- map["score"]
         source      <- map["source"]
+        sourceArr   <- map["sourceArr"]
     }
 }

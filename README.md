@@ -1,4 +1,10 @@
+<<<<<<< Updated upstream
 ###JSONModel和ObjectMapper代码解析
+=======
+# JsonMapper
+
+###JSONModel和ObjectMapper代码解析###
+>>>>>>> Stashed changes
 ---
 
 开发中我们经常用到一些将JSON转化为model对象的第三方库，
@@ -6,7 +12,7 @@ OC的比较多，`YYModel`,`JSONModel`,`Mantle`,`MJExtension`等。
 Swift的相对较少，目前只用过`ObjectMapper`
 本文将主要通过分析`JSONModel` 和`ObjectMapper`来展示OC和Swift在JSON映射成对象的不同及主要涉及的知识点。
 
-####JSONModel主要函数及知识点
+####JSONModel主要函数及知识点###
 1. 初始化函数
 `-(id)initWithDictionary:(NSDictionary*)dict error:(NSError**)err`
 <br>
