@@ -39,7 +39,8 @@ Swift的相对较少，目前只用过`ObjectMapper`
 	参考[Declared Properties](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/ObjCRuntimeGuide/Articles/ocrtPropertyIntrospection.html),[Type Encodings](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/ObjCRuntimeGuide/Articles/ocrtTypeEncodings.html)
 	
 	> imageId T@"NSString",&,N,V_imageId
-timestamp Tq,N,V_timestamp
+	>
+	>timestamp Tq,N,V_timestamp
 
 
 3. 通过__NSSet__判断需解析的dictionary里所有key是否包含刚解析出model的所有属性名，即为保证model中的property都能被赋值
